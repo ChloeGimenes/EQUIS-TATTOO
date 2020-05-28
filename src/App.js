@@ -35,12 +35,12 @@ function App() {
       </div>
           <div className="menu">
             <p className="menu1">ABOUT</p>
-            <p className="menu2">WORKS</p>
-            <p className="menu3">CONTACT</p>
+            <p className="menu2">&nbsp;WORKS</p>
+            <p className="menu3">&nbsp;&nbsp;CONTACT</p>
           </div>
 
-          <div>
-            <p></p>
+          <div >
+            <p className="App-introduction">HI, I AM A FRENCH ARTIST PASSIONATE BY ART TATTOO,<br/> ILLUSTRATION, SKATEBOARDING AND ARCHITECTURE.<br/>I LOVE TO MIX THEM UP AND CROSSING NEW BOUNDARIES. I GIVE IMPORTANCE IN<br/>EXPLORING FEMALE GENDERS AND QUEER IDENTITIES<br/>AS A SOURCE OF INSPIRATION. THROUGH MY WORKS<br/>I LOVE TO HIGHLIGHT WOMEN FIGHT FOR EQUALITY. IN EVERY GENDERS<br/>AND NATIONALITIES. UNDERGROUND CULTURE AND TRIPS ALSO HAVE<br/>A GREAT INFLUENCE ON MY PRODUCTIONS<br/>I DO MANY EXHIBITIONS IN DIFFERENTS PLACES.<br/>I AM ALWAYS READY FOR NEW PROJECTS AND OTHER PERSPECTIVES.<br/>MAINLY BASED IN BORDEAUX, NANTES AND PARIS.  </p>
           </div>
 
           <div className="App-images">

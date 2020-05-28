@@ -1,0 +1,15 @@
+
+.Contact {
+    height: 100vh;
+}
+
+.Contact-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.form-inside {
+    flex-direction: column;
+}
