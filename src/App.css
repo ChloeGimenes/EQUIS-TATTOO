@@ -1,3 +1,7 @@
+a:link {
+  text-decoration: none;
+}
+
 .App {
   background-color: #15171a;
 }
@@ -16,6 +20,7 @@
   writing-mode: vertical-rl;
   text-orientation: upright;
   cursor: pointer;
+  
 }
 
 .social:hover {
@@ -37,6 +42,11 @@
   text-align: center;
   margin-right: 50px;
   margin-top: 30px;
+  height: 100px;
+  width: 100px;
+
+  border: 2px solid white;
+  border-radius: 60px;
   
 }
 
@@ -87,17 +97,24 @@
   font-size: calc(60px + 2vmin);
   margin: 5px;
   cursor: pointer;
+
+  transition: all .4s ease-in;
 }
 
 .menu1:hover {
   color: rgb(212, 218, 213);
   -webkit-text-stroke: 1px rgb(212, 218, 213) ;
-
-
+  letter-spacing: .5em;
 }
+
+
+
+
+
 .menu2:hover {
   color: #555847;
   -webkit-text-stroke: 1px #555847 ;
+  letter-spacing: .5em;
   
 
 }
@@ -105,6 +122,7 @@
 .menu3:hover {
   color: #893d27;
   -webkit-text-stroke: 1px #893d27 ;
+  letter-spacing: .5em;
   
 
 }

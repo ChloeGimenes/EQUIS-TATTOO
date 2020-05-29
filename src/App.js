@@ -10,14 +10,20 @@ import logo6 from './assets/images/skating.png';
 import logo7 from './assets/images/illu.png';
 import logo8 from './assets/images/pizza.png';
 import './App.css';
+import ReallySmoothScroll from 'really-smooth-scroll';
+
+
+ReallySmoothScroll.shim();
+
+
 
 function App() {
   return (
     <div className="App">
       <div className="App-header">
       <div className="App-header-socials">
-            <p className="social">Instagram</p>
-            <p className="social">Facebook</p>
+            <a href="https://www.instagram.com/equis.skate/"><p className="social">Instagram</p></a>
+            <a href="https://www.facebook.com/equis.skate"><p className="social">Facebook</p></a>
           </div>
           <div className="App-name">
             <p>TATTOO ARTIST<br/>BASED<br/>IN FRANCE</p>
@@ -34,7 +40,7 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
       </div>
           <div className="menu">
-            <p className="menu1">ABOUT</p>
+            <p className="menu1">&nbsp;&nbsp;&nbsp;ABOUT</p>
             <p className="menu2">&nbsp;WORKS</p>
             <p className="menu3">&nbsp;&nbsp;CONTACT</p>
           </div>
