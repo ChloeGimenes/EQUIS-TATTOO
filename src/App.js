@@ -1,5 +1,9 @@
 import React from 'react';
-import Contact from './Contact'
+// import ScrollReveal from 'scrollreveal';
+// import FadeIn from "react-fade-in";
+import Fade from 'react-reveal/Fade';
+
+import Contact from './Contact';
 import logo from './assets/images/malou.png';
 import logo1 from './assets/images/body.png';
 import logo2 from './assets/images/dog.png';
@@ -10,12 +14,8 @@ import logo6 from './assets/images/skating.png';
 import logo7 from './assets/images/illu.png';
 import logo8 from './assets/images/pizza.png';
 import './App.css';
-import ReallySmoothScroll from 'really-smooth-scroll';
 
-
-ReallySmoothScroll.shim();
-
-
+// ScrollReveal().reveal('.App-fade', { delay: 2000 });
 
 function App() {
   return (
@@ -44,21 +44,25 @@ function App() {
             <p className="menu2">&nbsp;WORKS</p>
             <p className="menu3">&nbsp;&nbsp;CONTACT</p>
           </div>
-
-          <div >
+          {/* <FadeIn transitionDuration='2000'> */}
+          <div className="App-fade">
             <p className="App-introduction">HI, I AM A FRENCH ARTIST PASSIONATE BY ART TATTOO,<br/> ILLUSTRATION, SKATEBOARDING AND ARCHITECTURE.<br/>I LOVE TO MIX THEM UP AND CROSSING NEW BOUNDARIES. I GIVE IMPORTANCE IN<br/>EXPLORING FEMALE GENDERS AND QUEER IDENTITIES<br/>AS A SOURCE OF INSPIRATION. THROUGH MY WORKS<br/>I LOVE TO HIGHLIGHT WOMEN FIGHT FOR EQUALITY. IN EVERY GENDERS<br/>AND NATIONALITIES. UNDERGROUND CULTURE AND TRIPS ALSO HAVE<br/>A GREAT INFLUENCE ON MY PRODUCTIONS<br/>I DO MANY EXHIBITIONS IN DIFFERENTS PLACES.<br/>I AM ALWAYS READY FOR NEW PROJECTS AND OTHER PERSPECTIVES.<br/>MAINLY BASED IN BORDEAUX, NANTES AND PARIS.  </p>
           </div>
-
+          {/* </FadeIn> */}
+        
           <div className="App-images">
-          <img src={logo1} className="App-logos decal1" alt="logo" />
-          <img src={logo2} className="App-logos decal2" alt="logo" />
-          <img src={logo3} className="App-logos decal1" alt="logo" />
-          <img src={logo4} className="App-logos decal2" alt="logo" />
-          <img src={logo5} className="App-logos decal1" alt="logo" />
-          <img src={logo6} className="App-logos decal2" alt="logo" />
-          <img src={logo7} className="App-logos decal1" alt="logo" />
-          <img src={logo8} className="App-logos decal2" alt="logo" />
+            <Fade bottom cascade>
+              <img src={logo1} className="App-logos decal1" alt="logo" />
+              <img src={logo2} className="App-logos decal2" alt="logo" />
+              <img src={logo3} className="App-logos decal1" alt="logo" />
+              <img src={logo4} className="App-logos decal2" alt="logo" />
+              <img src={logo5} className="App-logos decal1" alt="logo" />
+              <img src={logo6} className="App-logos decal2" alt="logo" />
+              <img src={logo7} className="App-logos decal1" alt="logo" />
+              <img src={logo8} className="App-logos decal2" alt="logo" />
+            </Fade>
           </div>
+      
      
         <Contact />
 

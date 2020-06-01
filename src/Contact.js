@@ -1,26 +1,93 @@
-import React from 'react';
+import React, { Component } from 'react';
+import * as emailjs from 'emailjs-com';
 
-import './Contact.css'
+import './Contact.css';
 
 
+class Contact extends Component {
+  constructor() {
+    super();
+    this.state = {
+      name: '',
+      email: '',
+      message: '',
 
-function Contact() {
-
-    return(
-
-        <div className="Contact">
-            <p>CONTACT ME</p>
-         
-            <div className="Contact-form">
-                <form className="form-inside"  >
-                    <input type="text" maxLength="100" name="name" placeholder="name" required/>
-                    <input type="mail" maxLength="100" name="e-mail" placeholder="mail" required/>
-                    <textarea type="text" maxLength="500" name="text" placeholder="reason for contact" />
-                </form>
+    };
+  }
+  handleSubmit = e => {
+    e.preventDefault();
+    const { name, email, message } = this.state;
+    let templateParams = {
+      from_name: email,
+      to_name: name,
+      message_html: message,
+    
+     
+    };
+    emailjs.send('gmail', 'template_f0X8fBD2', templateParams, 'user_2puqpCKuOLP7C2RXBLYZm');
+    this.resetForm();
+  };
+  resetForm() {
+    this.setState({
+      name: '',
+      email: '',
+      message: '',
+     
+    });
+  }
+  handleChange = (param, e) => {
+    this.setState({ [param]: e.target.value });
+  };
+  render() {
+    return (
+      <div>
+     
+        
+        <form className="container-form" onSubmit={this.handleSubmit.bind(this)}>
+          <div className="contactform">
+            <input
+              type="text"
+              name="name"
+              value={this.state.name}
+              className="text-primary"
+              onChange={this.handleChange.bind(this, 'name')}
+              placeholder="NAME"
+              required
+            />
+            
+            <input
+              type="email"
+              name="email"
+              value={this.state.email}
+              className="text-primary"
+              onChange={this.handleChange.bind(this, 'email')}
+              placeholder="EMAIL"
+              required
+            />
+            
+            <textarea
+              className="textarea text-primary"
+              type="text"
+              name="message"
+              value={this.state.message}
+              onChange={this.handleChange.bind(this, 'message')}
+              placeholder="YOUR MESSAGE"
+              required
+            />
+            <div className="buttons-container">
+              <button
+                className="button-send"
+                type="submit"
+                onClick={() => this.handleSubmit.bind(this)}
+              >
+                SUBMIT
+              </button>
             </div>
-        </div>
-    )
+          </div>
+        </form>
+     
+      </div>
+    );
+  }
 }
-
 export default Contact;
-
