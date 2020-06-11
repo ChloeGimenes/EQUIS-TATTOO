@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { SocialIcon } from 'react-social-icons';
 import ScrollToTop from "react-scroll-to-top";
 import "react-scroll-to-top/lib/index.css";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -63,6 +64,7 @@ function App () {
   //   this.scroll();
   // }
 
+  const mediaMatch = window.matchMedia('(max-width: 600px)');
 
 
   return (
@@ -72,8 +74,12 @@ function App () {
 
         <div className="App-header">
           <div className="App-header-socials">
-                <a href="https://www.instagram.com/equis.skate/"><p className="social">Instagram</p></a>
-                <a href="https://www.facebook.com/equis.skate"><p className="social">Facebook</p></a>
+                <a href="https://www.instagram.com/equis.skate/">{ mediaMatch.matches ? 
+                  (<SocialIcon className="social-mobile" network="instagram" bgColor="white" style={{ height: 50, width: 50 }} />
+                  ) : ( <p className="social">Instagram</p>)} </a>
+                <a href="https://www.facebook.com/equis.skate">{ mediaMatch.matches ? 
+                  (<SocialIcon className="social-mobile" network="facebook" bgColor="white" style={{ height: 50, width: 50 }} />
+                  ) : ( <p className="social">Facebook</p>)} </a>
               </div>
 
               {/* <div className="App-name">
@@ -92,9 +98,9 @@ function App () {
           <img src={logo} className="App-logo" alt="logo" />
       </div>
           <div className="menu">
-            <p><AnchorLink href='#intro' className="menu1">&nbsp;ABOUT</AnchorLink></p>
-            <p><AnchorLink href='#works' className="menu2">&nbsp;&nbsp;WORKS</AnchorLink></p>
-            <p><AnchorLink href='#contactme' className="menu3" >&nbsp;&nbsp;&nbsp;CONTACT</AnchorLink></p>
+            <p><AnchorLink href='#intro' className="menu1">ABOUT</AnchorLink></p>
+            <p><AnchorLink href='#works' className="menu2">WORKS</AnchorLink></p>
+            <p><AnchorLink href='#contactme' className="menu3" >CONTACT</AnchorLink></p>
           </div>
        
           <div id="intro">

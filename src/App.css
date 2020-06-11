@@ -31,29 +31,36 @@ a:link {
 .App-header-socials {
   display: flex;
   flex-direction: row;
-  margin-left: 15px;
+  margin-left: 40px;
  
 }
 
 .social {
   color: white;
-  font-size: 12px ;
+  font-size: 15px ;
   font-family: Plain, sans-serif;
   writing-mode: vertical-rl;
   text-orientation: upright;
   cursor: pointer;
-  
+  margin-top: 45px;
+  margin-left: 20px
 }
 
 .social:hover {
   text-decoration:line-through;
 }
 
+.social-mobile {
+  margin-top: 40px;
+  margin-right: 20px;
+  
+}
+
 .App-header {
   background-color: #15171a;
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+
 }
 
 .App-name {
@@ -103,8 +110,7 @@ a:link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 28%;
-  margin-top: 5%
+  margin-bottom: 33%;
 }
 
 .menu {
@@ -119,7 +125,7 @@ a:link {
   letter-spacing: .3em;
   -webkit-text-stroke: 1px rgb(255, 255, 255);
   /* -webkit-text-stroke-width: 2px; */
-  font-size: calc(60px + 2vmin);
+  font-size: calc(70px + 2vmin);
   margin: 5px;
   cursor: pointer;
 
@@ -183,12 +189,58 @@ margin: 40px;
 }
 
 section { 
-  
- 
-
-  background-size: cover;
+  background-size: 8%;
+  background-position: 50% 90%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-size: 4vw; 
-  background-image: url(./assets/images/tattoo.png); 
+  background-image: url(./assets/images/equislogo3.png);
+  
+  
+  
+}
+
+
+@media screen and (max-width:559px) {
+
+  .App-header-title {
+    font-size: 50px;
+  }
+
+  .menu1, .menu2, .menu3 {
+    font-size: 36px;
+    margin-top: 27px;
+  }
+
+  .menu {
+    text-align: center;
+  }
+
+  .App-logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+    margin-top: 54px;
+    margin-bottom: 54px;
+  }
+
+  .App-main {
+    margin-bottom: 25%;
+  }
+
+  .App-introduction {
+    
+      font-size: 12px;
+      margin-top: 13%;
+  }
+
+  .App-logos {
+    width: 95%;
+  }
+
+  section { 
+    background-size: 20%;
+  }
 }

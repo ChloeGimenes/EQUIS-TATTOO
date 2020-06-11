@@ -8,6 +8,7 @@ function Svg() {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 500 500"
+      className="svgcircle"
     >
       <defs>
         <path
@@ -24,12 +25,16 @@ function Svg() {
             type="rotate"
           ></animateTransform>
         </path>
-        <path id="redstripe" d="M225 135H275V365H225z"></path>
       </defs>
-     
-      <text dy="70" textLength="1220">
-        <textPath xlinkHref="#textcircle">-SINCE 2016 - SINCE 2016</textPath>
+      
+      <text dy="90" textLength="1224">
+        <textPath xlinkHref="#textcircle">- SINCE 2016 - SINCE 2016 - SINCE 2016 </textPath>
       </text>
+
+        <foreignObject class="node" x="190" y="165" width="130" height="200">     
+          <div className="maintext"><p>FRENCH<br/>TATTOO<br/>ARTIST</p></div>                
+        </foreignObject>
+      
     </svg>
   );
 }

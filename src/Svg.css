@@ -52,22 +52,38 @@
     to { transform: rotate(0); }
 } */
 
-@font-face {
+/* @font-face {
     font-family: FranklinGothic-Heavy;
     src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/Franklin_Gothic_Heavy_Regular.woff);
-  }
+  } */
+
+  
   body { 
     margin: 0;
-    background: #000;
+    background: #15171a;
     text-align: center;
   }
-  svg { width: 15%; }
-  rect { fill:  }
+  .svgcircle { width: 13%; }
+
   text { 
-    font-size: 40px;
-      font-family: FranklinGothic-Heavy, Frankin Gothic, sans-serif;
-      font-weight: 900; 
+    font-size: 24px;
+
+      font-weight: 1000; 
       text-transform: uppercase;
       letter-spacing: 21px;
       fill: white;
+  }
+
+  .maintext {
+    color: white;
+    font-size: 26px;
+    font-weight: 400; 
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.5;
+
+  }
+
+  @media screen and (max-width:600px) {
+    .svgcircle { width: 68%; }
   }
