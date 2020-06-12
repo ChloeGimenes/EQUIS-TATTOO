@@ -74,12 +74,12 @@ function App () {
 
         <div className="App-header">
           <div className="App-header-socials">
-                <a href="https://www.instagram.com/equis.skate/">{ mediaMatch.matches ? 
-                  (<SocialIcon className="social-mobile" network="instagram" bgColor="white" style={{ height: 50, width: 50 }} />
-                  ) : ( <p className="social">Instagram</p>)} </a>
-                <a href="https://www.facebook.com/equis.skate">{ mediaMatch.matches ? 
-                  (<SocialIcon className="social-mobile" network="facebook" bgColor="white" style={{ height: 50, width: 50 }} />
-                  ) : ( <p className="social">Facebook</p>)} </a>
+                <a href="https://www.instagram.com/equis.skate/">
+                  <SocialIcon className="social-mobile" network="instagram" bgColor="white" style={{ display:"none", height: 40, width: 40 }} />
+                  <p className="social">Instagram</p></a>
+                <a href="https://www.facebook.com/equis.skate"> 
+                  <SocialIcon className="social-mobile" network="facebook" bgColor="white" style={{ display:"none", height: 40, width: 40 }} />
+                <p className="social">Facebook</p></a>
               </div>
 
               {/* <div className="App-name">
