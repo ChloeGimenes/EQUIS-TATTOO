@@ -90,7 +90,7 @@ function App () {
       <div className="App-main">
         <ScrollToTop smooth="true"/>
           <div className="App-header-title">
-            <p className="title">EQUIS TATTOO</p>
+            <p className="title">EQUI TATTOO</p>
           </div>
         
           <img src={logo} className="App-logo" alt="logo" />
