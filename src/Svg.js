@@ -27,7 +27,7 @@ function Svg() {
         </path>
       </defs>
       
-      <text dy="90" textLength="1224">
+      <text dy="65" textLength="1224">
         <textPath xlinkHref="#textcircle">- SINCE 2016 - SINCE 2016 - SINCE 2016 </textPath>
       </text>
 

@@ -63,7 +63,9 @@
     background: #15171a;
     text-align: center;
   }
-  .svgcircle { width: 250px; }
+  .svgcircle { 
+    width: 250px;
+    margin-right: 5% }
 
   text { 
     font-size: 24px;
@@ -77,13 +79,35 @@
   .maintext {
     color: white;
     font-size: 26px;
+    font-weight: 500; 
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.7;
+
+  }
+
+  @media screen and (max-width:600px) {
+    .svgcircle { 
+      width: 180px;
+      margin-right: 0% }
+
+
+  text { 
+    font-size: 29px;
+
+      font-weight: 1000; 
+      text-transform: uppercase;
+      letter-spacing: 18px;
+      fill: white;
+  }
+
+  .maintext {
+    color: white;
+    font-size: 28px;
     font-weight: 400; 
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 1.5;
 
   }
-
-  @media screen and (max-width:600px) {
-    .svgcircle { width: 180px; }
   }

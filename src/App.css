@@ -5,6 +5,12 @@
   
 }
 
+#my-scrollbar {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
 /* .smooth-scroll-wrapper {
   position: fixed;
   z-index: 2;
@@ -122,7 +128,6 @@ a:link {
   font-family:"Druk Wide Web Bold Regular" ;
   letter-spacing: .3em;
   -webkit-text-stroke: 1px rgb(255, 255, 255);
-  /* -webkit-text-stroke-width: 2px; */
   font-size: calc(70px + 2vmin);
   margin: 5px;
   cursor: pointer;
@@ -136,24 +141,16 @@ a:link {
   letter-spacing: .5em;
 }
 
-
-
-
-
 .menu2:hover {
   color: #555847;
   -webkit-text-stroke: 1px #555847 ;
   letter-spacing: .5em;
-  
-
 }
 
 .menu3:hover {
   color: #893d27;
   -webkit-text-stroke: 1px #893d27 ;
   letter-spacing: .5em;
-  
-
 }
 
 .App-images {
@@ -163,7 +160,6 @@ a:link {
 }
 
 .App-logos {
-
 width: 45%;
 margin: 40px;
 }
@@ -181,9 +177,7 @@ margin: 40px;
   font-size: 20px;
   letter-spacing: 0.44em;
   margin: 4%;
-  text-align: right;
-  
-  
+  text-align: right; 
 }
 
 section { 
@@ -192,17 +186,26 @@ section {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-size: 4vw; 
-  background-image: url(./assets/images/equislogo3.png);
-  
-  
-  
+  background-image: url(./assets/images/equislogo3.png); 
 }
 
-@media screen and (min-width: 800px) and (max-width: 1050px) {
+.blackwhitepic {
+
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 1550px) {
+
+
+  .App-main {
+    margin-bottom: 25%;
+  }
 
   .social-mobile {
     display: inline-block !important;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-right: 20px;
     
   }
@@ -212,12 +215,55 @@ section {
   }
 
   .title {
-    font-size: 90px;
+    font-size: 130px;
     margin-top: 6%;
     }
 
-    .menu1, .menu2, .menu3 {
+    /* .menu1, .menu2, .menu3 {
       font-size: 60px;
+      
+    } */
+
+    .menu1, .menu2, .menu3 {
+      color: rgb(227, 233, 231);
+      font-size: 50px;
+      margin-top: 27px;
+      letter-spacing: 0.3em;
+  
+      transition: inherit;
+      -webkit-text-stroke: rgb(227, 233, 231);
+  
+    }
+  
+  
+  .menu1:hover {
+    color: rgb(227, 233, 231);
+    -webkit-text-stroke: rgb(227, 233, 231);
+    letter-spacing: 0.3em;
+  
+  }
+  .menu2:hover {
+    color: white;
+    -webkit-text-stroke: white;
+    letter-spacing: 0.3em;
+  
+  }
+  .menu3:hover {
+    color: white;
+    -webkit-text-stroke: white;
+    letter-spacing: 0.3em;
+  
+  }
+  
+  
+    .menu {
+      margin: auto;
+      text-align: center;
+      margin-bottom: 10%;
+      flex-direction: column;
+      height: 200px;
+      display: flex;
+      justify-content: space-between;
       
     }
 }
@@ -230,7 +276,7 @@ section {
   margin-top: 8%;
   }
   
-  .menu {
+  /* .menu {
     margin-bottom: 8%;
     
   }
@@ -238,6 +284,49 @@ section {
   .menu1, .menu2, .menu3 {
     font-size: 50px;
     margin-top: 40px;
+  } */
+
+  .menu1, .menu2, .menu3 {
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    margin-top: 27px;
+    letter-spacing: 0.3em;
+
+    transition: inherit;
+    -webkit-text-stroke: white;
+
+  }
+
+
+.menu1:hover {
+  color: white;
+  -webkit-text-stroke: white;
+  letter-spacing: 0.3em;
+
+}
+.menu2:hover {
+  color: white;
+  -webkit-text-stroke: white;
+  letter-spacing: 0.3em;
+
+}
+.menu3:hover {
+  color: white;
+  -webkit-text-stroke: white;
+  letter-spacing: 0.3em;
+
+}
+
+
+  .menu {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10%;
+    flex-direction: column;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    
   }
 
   .social-mobile {
@@ -264,12 +353,45 @@ section {
 
 }
 
+/* PARTIE MOBILE ///////////////////////////////////////*/
+
 @media screen and (max-width:600px) {
 
+  button.scroll-to-top {
+    display:none !important;
+}
+
   .menu1, .menu2, .menu3 {
+    color: rgb(255, 255, 255);
     font-size: 30px;
     margin-top: 27px;
+    letter-spacing: 0.15em;
+
+    transition: inherit;
+    -webkit-text-stroke: white;
+
   }
+
+
+.menu1:hover {
+  color: white;
+  -webkit-text-stroke: white;
+  letter-spacing: 0.15em;
+
+}
+.menu2:hover {
+  color: white;
+  -webkit-text-stroke: white;
+  letter-spacing: 0.15em;
+
+}
+.menu3:hover {
+  color: white;
+  -webkit-text-stroke: white;
+  letter-spacing: 0.15em;
+
+}
+
 
   .menu {
     margin: auto;
@@ -279,21 +401,26 @@ section {
     height: 200px;
     display: flex;
     justify-content: space-between;
+    
   }
 
   .title {
+ 
     font-size: 50px;
     margin-top: 54px;
     margin-bottom: 54px;
   }
 
   .App-logo {
-    width: 150%;
+    width: 100vw;
     height: auto;
+    overflow: hidden;
     }
 
   .App-main {
-    margin-bottom: 50%;
+    margin-top: 12%;
+    margin-bottom: 23%;
+    box-sizing: border-box;
   }
 
   .App-introduction {
@@ -303,7 +430,7 @@ section {
   }
 
   .App-logos {
-    width: 95%;
+    width: 80%;
   }
 
   section { 
@@ -336,4 +463,16 @@ section {
   .social {
     display: none ! important;
   }
+}
+
+/*//////// ENLEVER LE BLEU DU CLICK SUR LES LIENS ///////*/
+
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }

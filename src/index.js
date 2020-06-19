@@ -7,6 +7,8 @@ import * as serviceWorker from './serviceWorker';
 import '../src/assets/fonts/Druk-Wide-Web.ttf';
 
 
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

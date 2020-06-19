@@ -3,15 +3,14 @@ import { SocialIcon } from 'react-social-icons';
 import ScrollToTop from "react-scroll-to-top";
 import "react-scroll-to-top/lib/index.css";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-// import ScrollReveal from 'scrollreveal';
-// import FadeIn from "react-fade-in";
 import Fade from 'react-reveal/Fade';
-import easyScroll from 'easy-scroll';
+
+// import Scrollbar from 'smooth-scrollbar';
+
 import Svg from './Svg'
-
-
 import Contact from './Contact';
 import logo from './assets/images/malou.png';
+// import logoMalou from './assets/images/malou-mobile.png';
 import logo1 from './assets/images/body.png';
 import logo2 from './assets/images/dog.png';
 import logo3 from './assets/images/landscapes.png';
@@ -20,14 +19,12 @@ import logo5 from './assets/images/love.png';
 import logo6 from './assets/images/skating.png';
 import logo7 from './assets/images/illu.png';
 import logo8 from './assets/images/pizza.png';
+import logo9 from './assets/images/cherrybomb.png';
 import './App.css';
 
 
 
-
-
-
-
+// Scrollbar.init(document.querySelector('#my-scrollbar'));
 
 function App () {
  
@@ -64,21 +61,21 @@ function App () {
   //   this.scroll();
   // }
 
-  const mediaMatch = window.matchMedia('(max-width: 600px)');
+
+  // const mediaMatch = window.matchMedia('(max-width: 600px)');
 
 
   return (
 
-    <div className="smooth-scroll-wrapper">
+    <div id="my-scrollbar">
       <div className="App">
-
         <div className="App-header">
           <div className="App-header-socials">
-                <a href="https://www.instagram.com/equis.skate/">
-                  <SocialIcon className="social-mobile" network="instagram" bgColor="white" style={{ display:"none", height: 40, width: 40 }} />
+                <a className="noSelect" href="https://www.instagram.com/equis.skate/">
+                  <SocialIcon className="social-mobile" network="instagram" bgColor="white" style={{ display:"none", height: 50, width: 50 }} />
                   <p className="social">Instagram</p></a>
-                <a href="https://www.facebook.com/equis.skate"> 
-                  <SocialIcon className="social-mobile" network="facebook" bgColor="white" style={{ display:"none", height: 40, width: 40 }} />
+                <a className="noSelect" href="https://www.facebook.com/equis.skate"> 
+                  <SocialIcon className="social-mobile" network="facebook" bgColor="white" style={{ display:"none", height: 50, width: 50 }} />
                 <p className="social">Facebook</p></a>
               </div>
 
@@ -95,7 +92,9 @@ function App () {
           <div className="App-header-title">
             <p className="title">EQUIS TATTOO</p>
           </div>
+        
           <img src={logo} className="App-logo" alt="logo" />
+        
       </div>
           <div className="menu">
             <p><AnchorLink href='#intro' className="menu1">ABOUT</AnchorLink></p>
@@ -118,6 +117,7 @@ function App () {
               <img src={logo6} className="App-logos decal2" alt="logo" />
               <img src={logo7} className="App-logos decal1" alt="logo" />
               <img src={logo8} className="App-logos decal2" alt="logo" />
+              <img src={logo9} className="App-logos decal1 blackwhitepic" alt="logo" />
             </Fade>
           </div>
       
@@ -129,6 +129,7 @@ function App () {
       </div>
 
     </div>
+    
   );
  }
 
