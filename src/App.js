@@ -5,12 +5,9 @@ import "react-scroll-to-top/lib/index.css";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Fade from 'react-reveal/Fade';
 
-// import Scrollbar from 'smooth-scrollbar';
-
 import Svg from './Svg'
 import Contact from './Contact';
 import logo from './assets/images/malou.png';
-// import logoMalou from './assets/images/malou-mobile.png';
 import logo1 from './assets/images/body.png';
 import logo2 from './assets/images/dog.png';
 import logo3 from './assets/images/landscapes.png';
@@ -23,47 +20,7 @@ import logo9 from './assets/images/cherrybomb.png';
 import './App.css';
 
 
-
-// Scrollbar.init(document.querySelector('#my-scrollbar'));
-
 function App () {
- 
-  //   scroll = () => {
-  
-  //   const body = document.body,
-   
-  //   scrollWrap = document.getElementsByClassName("smooth-scroll-wraper") [0],
-  //   height = scrollWrap.getBoundingClientRect().height - 1,
-  //   speed = 0.04;
-
-  //   var offset=0;
-
-  //   body.style.height = Math.floor(height) + "px";
-
-
-
-
-  //   const smoothScroll = () => {
-  //     offset += (window.pageYOffset) * speed;
-
-  //     var scroll = "translateY(-"+ offset +"px) translateZ(0)";
-  //     scrollWrap.style.transform = scroll;
-
-  //     // callScroll = requestAnimationFrame(smoothScroll)
-
-  //   }
-
-  // smoothScroll();
-
-  // }
-
-  // componentDidMount() {
-  //   this.scroll();
-  // }
-
-
-  // const mediaMatch = window.matchMedia('(max-width: 600px)');
-
 
   return (
 
@@ -78,11 +35,6 @@ function App () {
                   <SocialIcon className="social-mobile" network="facebook" bgColor="white" style={{ display:"none", height: 50, width: 50 }} />
                 <p className="social">Facebook</p></a>
               </div>
-
-              {/* <div className="App-name">
-                <p>TATTOO ARTIST<br/>BASED<br/>IN FRANCE</p>
-              </div> */}
-
 
            <Svg />
 
