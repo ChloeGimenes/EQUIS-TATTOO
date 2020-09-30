@@ -28,10 +28,10 @@ function Svg() {
       </defs>
       
       <text dy="65" textLength="1224">
-        <textPath xlinkHref="#textcircle">- SINCE 2019 - SINCE 2019 - SINCE 2019 </textPath>
+        <textPath xlinkHref="#textcircle">- SINCE 2019 - SINCE 2019 </textPath>
       </text>
 
-        <foreignObject class="node" x="190" y="160" width="130" height="200">     
+        <foreignObject class="node" x="173" y="175" width="160" height="200">     
           <div className="maintext"><p>FRENCH<br/>TATTOO<br/>ARTIST</p></div>                
         </foreignObject>
       

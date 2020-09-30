@@ -50,6 +50,7 @@ a:link {
   cursor: pointer;
   margin-top: 45px;
   margin-left: 20px
+  
 }
 
 .social:hover {
@@ -137,20 +138,20 @@ a:link {
 
 .menu1:hover {
   color: rgb(212, 218, 213);
-  -webkit-text-stroke: 1px rgb(212, 218, 213) ;
-  letter-spacing: .5em;
+  /* -webkit-text-stroke: 1px rgb(212, 218, 213) ;
+  letter-spacing: .5em; */
 }
 
 .menu2:hover {
-  color: #555847;
-  -webkit-text-stroke: 1px #555847 ;
-  letter-spacing: .5em;
+  color: rgb(212, 218, 213);
+  /* -webkit-text-stroke: 1px #555847 ;
+  letter-spacing: .5em; */
 }
 
 .menu3:hover {
-  color: #893d27;
-  -webkit-text-stroke: 1px #893d27 ;
-  letter-spacing: .5em;
+  color: rgb(212, 218, 213);
+  /* -webkit-text-stroke: 1px #893d27 ;
+  letter-spacing: .5em; */
 }
 
 .App-images {
