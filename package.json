@@ -15,7 +15,7 @@
     "react-dom": "^16.13.1",
     "react-fade-in": "^1.0.0",
     "react-reveal": "^1.2.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-scroll-to-top": "^0.2.3",
     "react-smooth-scrollbar": "^8.0.6",
     "really-smooth-scroll": "^2.1.1",
